@@ -1,5 +1,9 @@
 # Face_eyes_Cascade_classifier
 # Using ML for detecting face and eyes
+
+
+
+
 import cv2
 import numpy as np
 
@@ -7,7 +11,6 @@ import numpy as np
    eye_cascade = cv2.CascadeClassifier("haarcascade_eye.xml")
 
    cap = cv2.VideoCapture(0)
-​
 while 1:
 ret, img = cap.read()
 
@@ -27,7 +30,5 @@ ret, img = cap.read()
        k = cv2.waitKey(30) and 0xff
        if k == 27:
  break
-
-
  cap.release()
  cv2.destroyAllWindows()
